@@ -17,6 +17,6 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ScheduleVO {
-    private List<ScheduleValueVO<?>> values;
+    private List<? extends ScheduleValueVO> values;
 
 }

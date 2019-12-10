@@ -75,9 +75,9 @@ class MainTest {
 
     @SuppressWarnings("unchecked")
     private ScheduleVO generateScheduleVO(int offset, int salt1, int salt2, int salt3) {
-        List<ScheduleValueVO<?>> values = Stream.concat(
-                getMetaData(salt1, salt2, salt3).map(ScheduleValueVO.class::cast),
-                generateNumberValues(offset).map(ScheduleValueVO.class::cast))
+        List<ScheduleValueVO> values = Stream.concat(
+                getMetaData(salt1, salt2, salt3),
+                generateNumberValues(offset))
                 .collect(Collectors.toList());
         return new ScheduleVO(values);
     }
