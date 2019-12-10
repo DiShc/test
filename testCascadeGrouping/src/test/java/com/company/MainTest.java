@@ -95,6 +95,18 @@ class MainTest {
                 .map(NumberScheduleValueVO::new);
     }
 
+
+    /**
+     *
+     *  Group1 | Group1_1 | Group1_1_1 | [5,4,6,7...matrix_size]
+     *                                  --2,1,3,5...---
+     *                                  --3,3,3,2...---
+     * .....
+     * GroupN | GroupN_M | GroupN_M_K | [15,14, 26, 37...matrix_size]
+     *                                  --7, 1,  3,  5...---
+     *                                  --8, 13, 23, 32...---
+     *
+      */
     @Test
     @DisplayName("Test cascade grouping with aggregation")
     public void testAggregation() {
