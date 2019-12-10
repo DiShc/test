@@ -73,7 +73,6 @@ class MainTest {
         scheduleVOS.add(generateScheduleVO(offset, salt1, salt2, salt3));
     }
 
-    @SuppressWarnings("unchecked")
     private ScheduleVO generateScheduleVO(int offset, int salt1, int salt2, int salt3) {
         List<ScheduleValueVO> values = Stream.concat(
                 getMetaData(salt1, salt2, salt3),
