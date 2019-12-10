@@ -98,7 +98,7 @@ class MainTest {
 
     /**
      *
-     *  Group1 | Group1_1 | Group1_1_1 | [5,4,6,7...matrix_size]
+     *  Group1 | Group1_1 | Group1_1_1 | [5,4,6,7...matrix_size] - aggregated column sum
      *                                  --2,1,3,5...---
      *                                  --3,3,3,2...---
      * .....
